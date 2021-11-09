@@ -1,0 +1,111 @@
+{
+	"term": [
+		{
+			"reclass_float": {
+				" 36 months": "36",
+				" 60 months": "60"
+			}
+		}
+	],
+	"int_rate": [
+		{
+			"pcnt2num": "n/a"
+		}
+	],
+	"emp_length": [
+		{
+			"reclass_float": {
+				"<1 year": "0",
+				"1 year": "1",
+				"2 years": "2",
+				"3 years": "3",
+				"4 years": "4",
+				"5 years": "5",
+				"6 years": "6",
+				"7 years": "7",
+				"8 years": "8",
+				"9 years": "9",
+				"10+ years": "10"
+			}
+		},
+		{
+			"fill_na": "median"
+		}
+	],
+	"dti": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"earliest_cr_line": [
+		{
+			"str2deltadate": "n/a"
+		}
+	],
+	"revol_util": [
+		{
+			"pcnt2num": "n/a"
+		},
+		{
+			"fill_na": "median"
+		}
+	],
+	"mths_since_rcnt_il": [
+		{
+			"fill_na": "median_ilbal_is0"
+		}
+	],
+	"all_util": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"avg_cur_bal": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"bc_open_to_buy": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"bc_util": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"mo_sin_old_il_acct": [
+		{
+			"fill_na": "median_ilbal_is0"
+		}
+	],
+	"mths_since_recent_bc": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"mths_since_recent_inq": [
+		{
+			"fill_na": "25"
+		}
+	],
+	"percent_bc_gt_75": [
+		{
+			"fill_na": "median"
+		}
+	],
+	"loan_status": [
+		{
+			"reclass_obj": {
+				"Fully Paid": "low_risk",
+				"Current": "low_risk",
+				"In Grace Period": "low_risk",
+				"Late (16-30 days)": "high_risk",
+				"Late (31-120 days)": "high_risk",
+				"Default": "high_risk",
+				"Charged Off": "high_risk"
+			}
+		}
+	]
+}
